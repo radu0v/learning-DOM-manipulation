@@ -1,0 +1,79 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    height: 100vh;
+    background-image: url(bg-img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container{
+    height: 650px;
+    width: 550px;
+}
+
+.header {
+    width: 70%;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border: solid 2px white;
+    padding: 5px;
+    background-color: darkslategray;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+    background-color: darkslategray;
+    padding: 30px 40px;
+    border-radius: 3%;
+    box-shadow: 0 0 10px;
+}
+
+.main-content .text-area {
+    font-size: 1.7rem;
+    color: white;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.main-content .author {
+    font-size: 2rem;
+    color: orange;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.button-area button {
+    color: black;
+    background-color: orange;
+    font-size: 1.3rem;
+    border: transparent;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.button-area button:active {
+    background-color: rgb(142, 100, 15);
+    color: white;
+}
+
+.button-area button:hover {
+    background-color: rgb(142, 100, 15);
+    color: white;
+}

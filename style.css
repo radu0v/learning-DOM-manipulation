@@ -1,0 +1,61 @@
+body {
+    background-color: #1A1A1D;
+}
+
+.container {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    border: 5px solid;
+    border-color: white;
+    border-radius: 10px;
+   text-align: center;
+}
+
+#main-heading {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 70px;
+    padding: 20px;
+}
+
+.list-items {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    color:  #1A1A1D;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 8px;
+}
+
+.list-items:hover{
+    background-color: greenyellow;
+}
+
+ul {
+    padding: 20px;
+}
+
+.hidden-content {
+    display: none;
+}
+
+.hidden-content.reveal-btn{
+    display: contents;
+}
+
+.reveal-btn {
+    background-color: #1A1A1D;
+    border: solid;
+    color: white;
+    font-family:'Bricolage Grotesque', sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 20px;
+}
