@@ -1,0 +1,90 @@
+* {
+    font-family: 'Borel', 'cursive';
+}
+
+body {
+    background: url("bg-img.jpeg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+#open-btn {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 350px;
+    height: 100px;
+    background: transparent;
+    color: white;
+    font-size: 1.7rem;
+    box-shadow: 0 0 3px black;
+    border: solid 5px white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s;
+}
+
+#open-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#modal {
+    background-color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+
+    animation-name: animated-modal;
+    animation-duration: .4s;
+}
+
+#modal p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#close-btn {
+    font-size: 2rem;
+    color: red;
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    height: 40px;
+}
+
+#modal-container {
+    display: none;
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0,0,.2);
+}
+
+/* modal animation section */
+
+@keyframes animated-modal{
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+
+
