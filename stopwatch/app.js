@@ -20,7 +20,6 @@ let timerInterval = null;
 let timerStatus = 'stopped';
 
 // stop watch function
-
 function stopWatch(){
 
     seconds++
@@ -51,15 +50,20 @@ function stopWatch(){
     }
 
 
-    let displayTimer = document.getElementById('timer')
+    let displayTimer = document.getElementById('timer');
     displayTimer.innerText = leadingHours+ ":" + leadingMinutes + ":" + leadingSeconds;
 }
 
+
 startStopBtn.addEventListener('click',function(){
+
     if (timerStatus === 'stopped') {
+        // start the timer
         timerInterval = window.setInterval(stopWatch,1000);
+        // change the button icon to a pause button
         document.getElementById('startStopBtn').innerHTML = `
         <i class="fa fa-pause fa-3x" id="pause"></i>`;
+        // change timer status
         timerStatus = 'started';
     }else {
         window.clearInterval(timerInterval);
@@ -68,13 +72,22 @@ startStopBtn.addEventListener('click',function(){
         timerStatus = 'stopped'
     }
 })
+// The global clearInterval() method cancels a timed, repeating 
+// action which was previously established by a call to setInterval().
+// If the parameter provided does not identify a previously 
+// established action, this method does nothing.
 
+
+// reset the timer
 resetBtn.addEventListener('click',function(){
     window.clearInterval(timerInterval);
+
+    // reset the seconds , minutes and hours variables
     seconds = 0;
     minutes = 0;
     hours = 0;
 
+    // what to show on the page when i click the restart button
     document.getElementById('timer').innerHTML = "00:00:00";
 
 })

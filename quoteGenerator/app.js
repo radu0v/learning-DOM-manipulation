@@ -44,7 +44,10 @@ const quotes = [{
 },];
 
 btn.addEventListener("click",function(){
+    // generate a random integer number in the given interval
     let rand = Math.floor(Math.random()* quotes.length);
+    // change the quote and the author inner text in the page
+    // with the ones chosen by the random number
     quote.innerText = quotes[rand].quote;
     author.innerText = quotes[rand].author;
 })
