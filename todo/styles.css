@@ -1,0 +1,75 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    background: url(bg-img.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    height: 20vh;
+    width: 20vw;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+#input-task  {
+    height: 4vh;
+    width: 15vw;
+    border-radius: 10px;
+    border: solid;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+#add-task {
+    height: 4vh;
+    width: 2vw;
+    border: solid;
+    border-color: green;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#add-task i {
+    color: green;
+}
+
+.task {
+    text-align: left;
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.task li {
+    flex: 4;
+    list-style: none;
+    padding: 10px;
+}
+
+.task button {
+    flex: 1;
+    border-radius:20px ;
+    cursor: pointer;
+}
+
+.task .checkTask {
+    border-color: orange;
+
+}
+
+.task .delTask {
+    border-color: red;
+    margin-left: 10px;
+}
+
+
